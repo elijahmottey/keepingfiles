@@ -1,38 +1,147 @@
+html{
+  background-color: hsl(218, 28%, 13%);
+}
+
+
+figure img {
+  width:55%;
+  height:auto;
+}
+
+
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*styling for header component*/
+.header{
+  display :flex;
+  justify-content:space-between;
+cursor: pointer;
+  color:hsl(0, 0%, 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ul{
+  list-style: none;
+  display :flex;
+  justify-content: flex-end;
+  width:30vw;
+  font-size:1.2em;
+
+ 
+}
+li{
+  padding-right: 8%;
+}
+.header figure img {
+  width:55%;
+  display:flex;
+  justify-content: flex-start;
+
+
+}
+
+/*styling for header component*/
+
+/* landing page component*/
+
+.landing article {
+  color:hsl(0, 0%, 100%)
+  
+}
+.landing button{
+  width:26%;
+  height:3.6em;
+  background-color:  hsl(176, 68%, 64%);
+  border:1px solid black;
+  border-radius: 40px ;
+  color:hsl(0, 0%, 100%);
+  font-size:1em;
+  cursor: pointer;
+}
+
+
+
+/* Features*/
+.feature1,.feature2{
+  display:flex;
+  justify-content: space-evenly;
+  width:55%;
+  height: auto;
+  color:hsl(0, 0%, 100%);
+  margin:6em auto;
+}
+/*Tablet mode view*/
+@media(max-width:1024px){
+
+}
+
+
+
+/*Mobile View*/
+@media (max-width:768px){
+
+  .header{
+    display :flex;
+    justify-content:space-between;
+ 
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  ul{
+    
+    width:40%;
+    font-size:1.2em;
+    padding-right:2%;
+    font-size: 0.9rem;
+    margin-left:-15%;
+    
+  
+  }
+
+  .header figure img {
+    width:50%;
+    
+  
+  
+  }
+
+  li{
+    padding-left: 5%;
+    
+  }
+
+ .landing figure img {
+    width:70%;
+    height:70%;
+  }
+
+
+
+  /* landing page component*/
+
+  .landing article {
+    width: 90%;
+    margin:2.0em auto;
+    font-size: 0.8em;
+  }
+
+  .landing button{
+    width:60%;
+   
+  }
+
+
+  /* Features*/
+.feature1,.feature2{
+
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:90%;
+ 
+  
 }
-
-.App-link {
-  color: #61dafb;
+.feature2{
+  margin-top:-3em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
