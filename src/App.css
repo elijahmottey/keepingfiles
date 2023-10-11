@@ -72,6 +72,25 @@ li{
   color:hsl(0, 0%, 100%);
   margin:6em auto;
 }
+
+/* Productivity   */
+
+.productivity{
+  display: flex;
+  justify-content: space-around;
+  color:hsl(0, 0%, 100%);
+}
+.productivity figure img {
+  width:90%;
+  height:auto;
+}
+.productivity article {
+  width:35%;
+  text-align: left;
+  margin:6rem auto;
+  padding-right: 0.9rem;
+}
+
 /*Tablet mode view*/
 @media(max-width:1024px){
 
@@ -133,7 +152,7 @@ li{
 
 
   /* Features*/
-.feature1,.feature2{
+.feature1,.feature2 ,.productivity{
 
   flex-direction: column;
   width:90%;
@@ -143,5 +162,15 @@ li{
 .feature2{
   margin-top:-3em;
 }
+.productivity article, .productivity figure{
+  width:90%;
+  padding-right: 0.2rem;
+  
+ }
+ .productivity article{
+  margin-left:2rem;
+ }
+
+
   
 }
