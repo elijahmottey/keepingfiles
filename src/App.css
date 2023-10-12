@@ -91,6 +91,29 @@ li{
   padding-right: 0.9rem;
 }
 
+
+
+
+/*  team*/
+.team{
+  display:flex;
+  justify-content: center;
+  position:relative;
+  color:white;
+}
+.team aside {
+  display: flex;
+  justify-content: left;
+}
+.team img{
+  width: 80%;
+  height:80%;
+  border-radius: 50%;
+}
+.team p{
+  text-align: left;
+}
+
 /*Tablet mode view*/
 @media(max-width:1024px){
 
