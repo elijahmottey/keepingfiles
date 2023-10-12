@@ -3,16 +3,18 @@ import LandingPage from './components/LandingPage';
 import './App.css';
 import Features from './components/Features';
 import Productivity from './components/productivity';
+import Team from './components/Team'
 
 
 function App() {
   return (
     <div className="App">
-      
+      a
         <Header/>
         <LandingPage/>
         <Features/>
         <Productivity/>
+        <Team/>
     </div>
   );
 }
