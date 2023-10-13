@@ -137,6 +137,36 @@ li{
   left:4%;
   width: 5%;
 }
+
+
+/* Footer*/
+
+.footer{
+  background-color: hsl(216, 53%, 9%);
+  
+  color:white;
+}
+
+.footer section {
+  display:flex;
+}
+.footer ul {
+  display:block;
+}
+.footer section figure {
+  display:flex;
+}
+
+.logo{
+  padding-top: 5rem;
+}
+
+.footer figure img {
+   width:15%;
+  display:flex;
+  justify-content: flex-start;
+  
+}
 /*Tablet mode view*/
 @media(max-width:1024px){
 
@@ -244,6 +274,12 @@ li{
  
 }
 
-
+.footer section  {
+  display:flex;
+  flex-direction: column;
+}
+.footer img {
+  width:10%;
+}
   
 }
