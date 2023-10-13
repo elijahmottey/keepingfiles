@@ -21,13 +21,15 @@ function Footer() {
 
         </figure>
         <div>
-            <section>
-                <img src={Phone} alt="phone" />
+            <section className='sec'>
+                <figure>
+                    <img src={Phone} alt="phone" />
+                </figure>
                 <p> +1-543-123-4567</p>
             </section>
-            <section>
-                <img src={Email} alt="Email" />
-                <p>   example@fylo.com</p>
+            <section className='sec'>
+                <figure><img src={Email} alt="Email" /></figure>
+                <p>  example@fylo.com</p>
             </section>
         </div>
         <ul>

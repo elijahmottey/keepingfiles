@@ -102,6 +102,7 @@ li{
   color:white;
   font-size: 0.9em;
   margin:2rem 5rem;
+  padding-bottom: 6rem;
 }
 .team aside {
   display: flex;
@@ -145,11 +146,15 @@ li{
   background-color: hsl(216, 53%, 9%);
   
   color:white;
+  position:relative;
+  margin-top: 10rem;
+  padding-top: 10rem;
 }
 
 .footer section {
   display:flex;
 }
+
 .footer ul {
   display:block;
 }
@@ -161,11 +166,65 @@ li{
   padding-top: 5rem;
 }
 
-.footer figure img {
-   width:15%;
+.footer section  img {
+   width: 1.5rem;
+   height: 1.5rem;
   display:flex;
   justify-content: flex-start;
+  margin-top: 1rem;
+  margin-right: 1rem;
   
+}
+.footer section p {
+  text-align: left;
+}
+.logo img {
+  width:9rem;
+  height: 3rem;
+  position:absolute;
+  left:2.7rem;
+  margin-top: -3rem;
+  
+
+}
+
+
+/*forms*/
+.forms{
+  position:relative;
+  margin-top: 5rem;
+  
+    
+}
+
+form{
+  background-color: hsl(217, 28%, 15%);
+  width:50%;
+  
+  text-align: center;
+  height: auto;
+  position: absolute;
+  top:-3rem;
+  left:21%;
+  z-index: 1;
+  padding:2rem;
+  color:white;
+  border-radius: 6px;
+
+
+}
+#email{
+  width: 50%;
+  height: 2.8rem;
+  border-radius: 40px;
+  outline:0;
+}
+.forms button {
+  height: 2.8rem;
+  border-radius: 30px;
+  margin-left: 2rem;
+  background-color: hsl(176, 68%, 64%);
+  color: white;
 }
 /*Tablet mode view*/
 @media(max-width:1024px){
@@ -279,7 +338,48 @@ li{
   flex-direction: column;
 }
 .footer img {
-  width:10%;
+  width:7rem;
 }
+
+.sec{
+  display:flex;
+  justify-content: left;
+}
+.sec p {
+  margin-top:-2.5rem;
+  margin-left: 5rem;
+}
+
+
+
+form{
+  
+  width:74%;
+  
+ 
+  
+  
+  top:-6.5rem;
+  left:4%;
+
+
+}
+#email{
+  width: 80%;
+  height: 2.8rem;
+  border-radius: 40px;
+  margin-bottom: 1rem;
+}
+.forms button {
+  height: 2.8rem;
+  width:80%;
+  border-radius: 30px;
+  margin-left: 0.9rem;
+  
+  
+}
+
+
+
   
 }

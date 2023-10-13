@@ -6,6 +6,9 @@ import Productivity from './components/productivity';
 import Team from './components/Team';
 import Image from './fylo-dark-theme-landing-page-master/images/bg-quotes.png'
 import Footer from './components/Footer'
+import Forms from './components/Forms';
+
+
 
 
 function App() {
@@ -18,9 +21,10 @@ function App() {
        
         <Productivity/>
         <figure className="quote">
-        <img src= {Image} alt="image" />
+        <img src= {Image} alt="quote" />
         </figure>
         <Team/>
+        <Forms/>
         <Footer />
     </div>
   );
