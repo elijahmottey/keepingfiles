@@ -1,6 +1,6 @@
 
 import Logo from '../fylo-dark-theme-landing-page-master/images/logo.svg'
-
+import { Link } from 'react-router-dom'
 function Header() {
   return (
     <div className="header">
@@ -10,8 +10,8 @@ function Header() {
                 <img src={Logo} alt='logo' />
             </figure>
             <ul>
-                <li>Features</li>
-                <li>Team</li>
+               <Link to='/features' className='link'><li>Features</li></Link> 
+               <Link to='/team'  className='link'  ><li>Team</li></Link> 
                 <li>Sign In</li>
             </ul>
     

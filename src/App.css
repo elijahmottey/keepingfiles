@@ -42,6 +42,15 @@ li{
 
 }
 
+.link{
+  text-decoration: none;
+  color:white;
+  margin-left: 3%;
+}
+.link:hover{
+  color: hsl(176, 68%, 64%); ;
+}
+
 /*styling for header component*/
 
 /* landing page component*/
