@@ -112,6 +112,7 @@ li{
   font-size: 0.9em;
   margin:2rem 5rem;
   padding-bottom: 6rem;
+  
 }
 .team aside {
   display: flex;
@@ -135,6 +136,7 @@ li{
   width:30%;
   padding:1rem;
    margin:2rem 1rem;
+   border-radius: 6px;
 }
 
 
@@ -180,12 +182,18 @@ li{
    height: 1.5rem;
   display:flex;
   justify-content: flex-start;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-right: 1rem;
   
 }
 .footer section p {
   text-align: left;
+}
+.phone1,.email1{
+  margin-top: 1.5rem;
+}
+.paragraph{
+  margin-top: 0.5rem;
 }
 .logo img {
   width:9rem;
@@ -195,6 +203,37 @@ li{
   margin-top: -3rem;
   
 
+}
+
+.icon-m{
+  margin-right: 3rem;
+  margin-top:1.5rem;
+  cursor: pointer;
+}
+.icon:hover  {
+  border-color:hsl(176, 68%, 64%) ;
+  color: hsl(176, 68%, 64%);
+}
+.icons:hover  {
+  
+  color: hsl(176, 68%, 64%);
+}
+.icon{
+  width:1.5rem;
+  height: 1.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 1rem;
+  padding: auto;
+
+
+}
+.icons{
+  
+   position: absolute;
+   right: 0.24rem;
+   top: 0.24em;
 }
 
 
@@ -234,6 +273,10 @@ form{
   margin-left: 2rem;
   background-color: hsl(176, 68%, 64%);
   color: white;
+}
+
+.isdisable{
+  background-color: red;
 }
 /*Tablet mode view*/
 @media(max-width:1024px){
@@ -385,10 +428,10 @@ form{
   border-radius: 30px;
   margin-left: 0.9rem;
   
+  #flex{
+    display: flex;
+  }
+
+
   
-}
-
-
-
-  
-}
+}}

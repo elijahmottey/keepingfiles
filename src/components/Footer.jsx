@@ -3,6 +3,8 @@ import Logo from '../fylo-dark-theme-landing-page-master/images/logo.svg'
 import Location from '../fylo-dark-theme-landing-page-master/images/icon-location.svg'
 import Phone from '../fylo-dark-theme-landing-page-master/images/icon-phone.svg'
 import Email from '../fylo-dark-theme-landing-page-master/images/icon-email.svg'
+import { FaFacebook,FaTwitter,FaInstagram} from 'react-icons/fa'
+
 
 function Footer() {
   return (
@@ -13,7 +15,7 @@ function Footer() {
       <section>
         <figure>
             <img src={ Location} alt='location'/>
-            <p>
+            <p className='paragraph'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
             dolore magna aliqua
             </p>
@@ -25,11 +27,11 @@ function Footer() {
                 <figure>
                     <img src={Phone} alt="phone" />
                 </figure>
-                <p> +1-543-123-4567</p>
+                <p className='phone1'> +1-543-123-4567</p>
             </section>
             <section className='sec'>
                 <figure><img src={Email} alt="Email" /></figure>
-                <p>  example@fylo.com</p>
+                <p className='email1'>  example@fylo.com</p>
             </section>
         </div>
         <ul>
@@ -45,6 +47,11 @@ function Footer() {
                 <li>Privacy</li>
                
             </ul>
+            <section className='sec icon-m' id='flex'>
+               <div className='icon'> <FaFacebook color='white' className='icons' /></div>
+                <div className='icon' ><FaTwitter color='white'  className='icons'/></div>
+                <div  className='icon'><FaInstagram color='white'  className='icons'/></div>
+            </section>
       </section>
     </div>
   )

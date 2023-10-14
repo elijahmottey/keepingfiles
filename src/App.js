@@ -44,7 +44,7 @@ function App() {
       </figure>
       <ul>
         <Link to='/' className='link'><li>Homepage</li></Link> 
-        <Link to='/team' className='link'><li>Team</li></Link>  
+        <Link to='/team' ><li>Team</li></Link>  
           <li>Sign In</li>
       </ul>
 
