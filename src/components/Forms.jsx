@@ -7,7 +7,9 @@ function Forms() {
 
   const Submit = (e) => {
     e.preventDefault(); // Prevent the form from actually submitting (default behavior)
-    setChangeValue("");
+    window.alert("email submitted")
+    setChangeValue('')
+    
   }
 
   const HandleChange = (e) => {
@@ -25,17 +27,27 @@ function Forms() {
     }
     
     setChangeValue(email);
+   
   }
 
   return (
     <div className="forms">
       <form onSubmit={Submit}>
         <h2>Get early access today</h2>
+       
         <p>It only takes a minute to sign up, and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
         <input type="email" placeholder="example@fylo.com" id="email" onChange={HandleChange} />
+       
         <button type="submit" disabled={isdisable}>Get Started For Free</button>
+        {message && <p className="message" style={{
+          fontSize:'0.8rem',
+          color:'red',
+          textTransform:'italic',
+          textAlign:'left',
+          marginLeft:'5rem'
+        }}>{message}</p>}
       </form>
-      {message && <p>{message}</p>}
+      
     </div>
   );
 }

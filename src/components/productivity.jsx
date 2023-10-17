@@ -1,5 +1,6 @@
 
 import Image from '../fylo-dark-theme-landing-page-master/images/illustration-stay-productive.png'
+import Arrow from '../fylo-dark-theme-landing-page-master/images/icon-arrow.svg'
 
 function Productivity() {
   return (
@@ -14,7 +15,9 @@ function Productivity() {
   storage needs.</p>
 <p>  Securely share files and folders with friends, family and colleagues for live collaboration. No email 
   attachments required.</p>
-            <a href="#"> See how Fylo works</a>
+            <a href="#" style={{
+              color:'white'
+            }}> See how Fylo works <img src={Arrow} alt='arrow' /></a>
         </article>
       
     </div>
