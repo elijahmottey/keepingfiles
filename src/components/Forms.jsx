@@ -5,20 +5,15 @@ function Forms() {
   const [message, setMessage] = useState("");
   const [isdisable, setIsdisable] = useState(true);
 
-  const Submit = (e) => {
-    e.preventDefault(); // Prevent the form from actually submitting (default behavior)
-    window.alert("email submitted")
-    setChangeValue('')
-    
-  }
+ 
 
   const HandleChange = (e) => {
-    const email = e.target.value;
+  
     
-    if (email === "") {
+    if (changeValue === "") {
       setIsdisable(true);
-      setMessage("No email yet");
-    } else if (email.includes("@")) {
+      setMessage(null);
+    } else if (changeValue.includes("@")) {
       setMessage("Email is valid");
       setIsdisable(false);
     } else {
@@ -26,8 +21,16 @@ function Forms() {
       setIsdisable(true); // You should disable the button in this case too
     }
     
-    setChangeValue(email);
+    setChangeValue(e.target.value);
    
+  }
+
+
+   const Submit = (e) => {
+    e.preventDefault(); // Prevent the form from actually submitting (default behavior)
+    window.alert("email submitted")
+    setChangeValue('')
+    
   }
 
   return (
